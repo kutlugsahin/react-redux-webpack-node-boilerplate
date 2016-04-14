@@ -1,10 +1,11 @@
 # react-redux-webpack-node-boilerplate
 basic essentials for react-redux app hosted on node
 
-# nodemon & babel-cli & webpack assumed to be installed globally
-## npm install -g babel-cli webpack nodemon
+# npm packages
+nodemon & babel-cli & webpack assumed to be installed globally
+npm install -g babel-cli webpack nodemon
 # install dependencies
-# npm install
+npm install
 
 #start app
 # 1) npm run devClient // watches client files webpacks them into bundle.js
