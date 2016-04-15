@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "C:\\Users\\ahmetkutlu\\Desktop\\reduxInit\\build\\client";
+/******/ 	__webpack_require__.p = "C:\\Users\\kutlu.sahin\\Desktop\\react-redux-webpack-node-boilerplate\\build\\client";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -21659,8 +21659,8 @@
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-	var rcs = (0, _redux.combineReducers)(reducers);
-	var store = (0, _redux.createStore)(rcs);
+	var combinedReducers = (0, _redux.combineReducers)(reducers);
+	var store = (0, _redux.createStore)(combinedReducers);
 	exports.default = store;
 
 /***/ },
@@ -21677,7 +21677,7 @@
 	    var action = arguments[1];
 
 	    switch (action.type) {
-	        case 'APP_RED':
+	        case 'APP_RDC':
 	            return state;
 	            break;
 	        default:
