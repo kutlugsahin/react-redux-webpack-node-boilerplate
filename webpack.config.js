@@ -7,9 +7,9 @@ module.exports = {
     entry:  APP_DIR + '/App.jsx',
     output: {
         path:     BUILD_DIR,
-        filename: 'bundle.js',
-        publicPath : BUILD_DIR
+        filename: 'bundle.js'        
     },
+    devtools: ['source-map'],
     module: {
         loaders: [
             {
