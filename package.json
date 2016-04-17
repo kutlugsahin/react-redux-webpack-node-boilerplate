@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "devClient": "webpack -w",
         "devServer": "babel -w server/ -d build/server/",
-        "nodemon": "nodemon server/app.js"
+        "nodemon": "nodemon build/server/app.js"
     },
     "repository": {
         "type": "git",

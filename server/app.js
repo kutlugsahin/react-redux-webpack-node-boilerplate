@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 var app = express();
-console.log(__dirname);
+
 var publicPath = path.resolve(__dirname + './../../build/client');
 
 app.use(express.static(publicPath));
@@ -11,5 +11,5 @@ app.get('/', function (req,res) {
 });
 
 app.listen(3535, function () {
-    console.log('server listenting @ 3535');
+    console.log('server listening @ 3535');
 })
