@@ -1,10 +1,6 @@
 import express from 'express';
 import path from 'path';
 var app = express();
-<<<<<<< HEAD
-=======
-
->>>>>>> 39ce34550be24fc24b3e4f661194140ab4bafaf0
 var publicPath = path.resolve(__dirname + './../../build/client');
 
 var webpack = require('webpack');
@@ -24,5 +20,5 @@ app.use(express.static(publicPath));
 // });
 
 app.listen(3535, function () {
-    console.log('server listening @ 3535');
+    console.log('server listenting @ 3535');
 })
