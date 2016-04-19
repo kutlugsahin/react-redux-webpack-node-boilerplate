@@ -6,7 +6,9 @@ var BUILD_DIR = path.resolve(__dirname + '/build/client');
 
 module.exports = {
   entry: [
-    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    //'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
     APP_DIR + '/main.jsx'
   ],
   output: {
@@ -21,6 +23,7 @@ module.exports = {
       loaders: ['react-hot','babel'],
       include: APP_DIR,
     }]
+    //,{ test : /\.html?/, loader : 'file', include : __dirname }
     //,{ test: /\.js?$/, loaders: ['react-hot', 'jsx?harmony'], include: path.join(__dirname, 'client') }
   },
   plugins: [

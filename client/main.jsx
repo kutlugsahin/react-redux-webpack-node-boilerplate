@@ -1,3 +1,4 @@
+//require('file?name=[name].[ext]!../index.html');
 import React, {createClass} from 'react'
 import {render} from 'react-dom'
 import {Provider} from 'react-redux'
