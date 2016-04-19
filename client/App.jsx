@@ -1,14 +1,17 @@
 import React, {createClass} from 'react'
-import {render} from 'react-dom'
-import {Provider} from 'react-redux'
-import store from './store/store.js'
+
+var cls = {
+  backgroundColor : '#ccc',
+  height : '30px',
+  fontSize : '24px'
+}
 
 var App = createClass({
     render(){
         return (
-            <div>Hello world!!!!!</div>
+            <div style={cls}>Hello world!!.**.!!!!</div>
         )
     }
 });
 
-render(<Provider store={store}><App/></Provider>, document.getElementById('app'));
+export default App;
