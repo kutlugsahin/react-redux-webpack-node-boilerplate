@@ -1,4 +1,4 @@
-import React, {createClass} from 'react'
+import React, {createClass, PropTypes, Component} from 'react'
 
 var cls = {
 	backgroundColor: '#ccc',
@@ -10,19 +10,19 @@ import {render} from 'react-dom'
 import {Provider} from 'react-redux'
 import store from './store/store.js'
 
-class App extends React.Component {
+class App extends Component {
 	constructor(props) {
 		super(props)
 	}
-
+	
 	render() {
 		return (
-			<div>
-				<div style={cls}>Hello world!!.**.!!!!</div>
-				<div>Hello world!!!</div>
+			<div >	
+				<div style={cls}>Hello world!!.**.!!</div>
+				<div>Hello world!!!!!!</div>
 			</div>
 		)
-	}
+	}	
 }
 
 export default App;

@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devClient": "webpack -w",
+    "devClient": "webpack -d -w",
     "devServer": "babel -w server/ -d build/server/",
     "nodemon": "nodemon build/server/webpackDevServer.js"
   },
@@ -36,6 +36,7 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",

@@ -6,8 +6,8 @@ var BUILD_DIR = path.resolve(__dirname + '/build/client');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
+    //'webpack-dev-server/client?http://localhost:3000',
+    //'webpack/hot/only-dev-server',
     //'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
     APP_DIR + '/main.jsx'
   ],
@@ -31,7 +31,7 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     // Webpack 2.0 fixed this mispelling
     // new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
+    //new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
 };

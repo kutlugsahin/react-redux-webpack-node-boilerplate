@@ -12,11 +12,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var app = (0, _express2.default)();
 
-app.use(_express2.default.static(publicPath));
+var bootstrap = _path2.default.join(__dirname, '../../node_modules/', "bootstrap", "dist");
+var jquery = _path2.default.join(__dirname, '../../node_modules/', "jquery", "dist");
+var client = _path2.default.join(__dirname, '..', "client");
 
-// app.get('/', function (req,res) {
-//     res.sendFile(publicPath + '/index.html');
-// });
+app.use('/bootstrap', _express2.default.static(bootstrap));
+app.use('/jquery', _express2.default.static(jquery));
+app.use('/client', _express2.default.static(client));
+
+app.get('/', function (req, res) {
+    res.sendFile(_path2.default.join(__dirname, '../../', '/index.html'));
+});
 
 app.listen(3535, function () {
     console.log('server listenting @ 3535');
