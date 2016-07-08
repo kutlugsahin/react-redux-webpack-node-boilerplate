@@ -10,7 +10,11 @@ import {render} from 'react-dom'
 import {Provider} from 'react-redux'
 import store from './store/store.js'
 
-var App = createClass({
+class App extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         return (
             <div>
@@ -19,6 +23,6 @@ var App = createClass({
             </div>
         )
     }
-});
+}
 
 export default App;
